@@ -1,9 +1,9 @@
 //Diseño    
 
-//Color de fondo página y tipografia principal
+
+//Color de fondo página 
 body {
     background: $color-body; 
-    font-family: 'Sintony', sans-serif;
 }
 
 //Barra de navegación
@@ -28,7 +28,7 @@ body {
 
     //Titulo de la página 
     .titulo {
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Josefin Sans', sans-serif;
         color: #000000;
         margin-left: 5px;                        
         font-size: 30px;  
@@ -48,7 +48,7 @@ body {
 main {
     //Titulo de bienvenida a la página 
     .tituloBienvenida {
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Josefin Sans', sans-serif;
         font-size: 45px;
         color: black;
         text-shadow: 3px 2px $color-primary;
@@ -63,21 +63,38 @@ main {
     //Subtitulos
     h2 {
         font-size: 25px;
-        font-family: 'Poppins', sans-serif;
-        text-decoration: underline;
+        font-family: 'Josefin Sans', sans-serif;
         color: black;
         text-shadow: 1px 1px $color-primary;
     }
 
     //Parráfos
     p  {
-        font-size: 15px;
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 18px;
     }
 
     //titulo tienda
     .tituloTienda {
         font-size: 30px !important;
         text-decoration: underline;
+    }
+
+    //color de los botones del index
+    .colorDeBoton {
+        background-color: orange !important;
+    }
+
+    //color de div con texto
+    .textosDiseño1 {
+        background-color: #FFD298;
+        border-radius: 10px;
+    }
+
+    .textosDiseño2 {
+        background-color: white;
+        border-radius: 10px;
     }
 }
 

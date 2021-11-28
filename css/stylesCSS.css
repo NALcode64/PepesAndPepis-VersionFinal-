@@ -4,9 +4,10 @@
 /* operaciones */
 /* mixins */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Poppins:wght@300&family=Sintony&family=Thasadith:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,700;1,700&family=Roboto:wght@300&display=swap");
 body {
-  background: linear-gradient(to right, #ffefba, #ffffff);
-  font-family: 'Sintony', sans-serif; }
+  background: white; }
 
 .navbar {
   border: 1px solid black;
@@ -23,7 +24,7 @@ body {
     display: flex;
     justify-content: center; }
   .navbar .titulo {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     color: #000000;
     margin-left: 5px;
     font-size: 30px;
@@ -36,7 +37,7 @@ body {
     border: gray 2px outset; }
 
 main .tituloBienvenida {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 45px;
   color: black;
   text-shadow: 3px 2px orange; }
@@ -47,17 +48,29 @@ main .imagenCarousel {
 
 main h2 {
   font-size: 25px;
-  font-family: 'Poppins', sans-serif;
-  text-decoration: underline;
+  font-family: 'Josefin Sans', sans-serif;
   color: black;
   text-shadow: 1px 1px orange; }
 
 main p {
-  font-size: 15px; }
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 18px; }
 
 main .tituloTienda {
   font-size: 30px !important;
   text-decoration: underline; }
+
+main .colorDeBoton {
+  background-color: orange !important; }
+
+main .textosDiseño1 {
+  background-color: #FFD298;
+  border-radius: 10px; }
+
+main .textosDiseño2 {
+  background-color: white;
+  border-radius: 10px; }
 
 footer .footerStyle {
   background-color: #FFD298;
@@ -123,7 +136,8 @@ footer .row {
 .nav-item {
   list-style: none;
   color: black;
-  font-size: 12px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 13px;
   font-weight: 700;
   background: white;
   box-shadow: 3px 3px #000000;
@@ -133,8 +147,6 @@ footer .row {
   text-align: center;
   transition: all 0.3s ease 0s;
   cursor: pointer; }
-  .nav-item:hover {
-    background-color: white; }
   .nav-item:active {
     box-shadow: 2px 2px 2px #777;
     text-shadow: 0px 0px 5px #fff, 0px 0px 5px #fff;
@@ -212,9 +224,6 @@ footer .row {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box; }
-
-::-webkit-scrollbar {
-  display: none; }
 
 a {
   text-decoration: none;

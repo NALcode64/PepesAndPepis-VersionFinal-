@@ -267,5 +267,13 @@
     "yargs": "^13.3.2",
     "yargs-parser": "^20.2.9"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NALcode64/PepesAndPepis-VersionSass.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NALcode64/PepesAndPepis-VersionSass/issues"
+  },
+  "homepage": "https://github.com/NALcode64/PepesAndPepis-VersionSass#readme",
   "description": ""
 }
