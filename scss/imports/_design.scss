@@ -1,0 +1,124 @@
+//Diseño    
+
+//Color de fondo página y tipografia principal
+body {
+    background: $color-body; 
+    font-family: 'Sintony', sans-serif;
+}
+
+//Barra de navegación
+.navbar {
+    @include bordesSolidos(1px,black);
+    
+    /* estilo botones */
+    .botonStyle {
+        @include redondear;
+    }
+
+    //Logo de la página
+    .imagenLogo {
+        width: 120%; 
+        height: 100%;
+        @include redondear;
+        cursor: pointer;
+        background-color: $color-containers;
+        display: flex;
+        justify-content: center;
+    }
+
+    //Titulo de la página 
+    .titulo {
+        font-family: 'Poppins', sans-serif;
+        color: #000000;
+        margin-left: 5px;                        
+        font-size: 30px;  
+        font-style: Light 300;
+        text-shadow: 2px 2px $color-primary;
+        cursor: pointer;
+        animation: salto 2s 1 ease-in;
+    }
+
+    /* diseño boton hamburguesa para celulares */
+    .botonMenuMobile {
+        color: $color-primary;
+        border: gray 2px outset;
+    }
+}
+
+main {
+    //Titulo de bienvenida a la página 
+    .tituloBienvenida {
+        font-family: 'Poppins', sans-serif;
+        font-size: 45px;
+        color: black;
+        text-shadow: 3px 2px $color-primary;
+    }
+
+    //Imagenes del carrousel 
+    .imagenCarousel {
+        border: 1px solid black;
+        max-height: 39rem;
+    }    
+
+    //Subtitulos
+    h2 {
+        font-size: 25px;
+        font-family: 'Poppins', sans-serif;
+        text-decoration: underline;
+        color: black;
+        text-shadow: 1px 1px $color-primary;
+    }
+
+    //Parráfos
+    p  {
+        font-size: 15px;
+    }
+
+    //titulo tienda
+    .tituloTienda {
+        font-size: 30px !important;
+        text-decoration: underline;
+    }
+}
+
+footer {
+    .footerStyle {
+        background-color: $color-containers;
+        @include bordesSolidos(0.5px,black);
+    }
+
+    //Titulo footer
+    .tituloFooter {
+        font-family: 'Poppins', sans-serif;
+        color: #000000;                        
+        font-size: 25px;  
+        font-style: Light 300;
+        text-shadow: 2px 2px $color-primary;
+        cursor: pointer;
+    }
+
+    //Icono mail
+    .iconoMail {
+        color: black;
+        background-color: $color-primary;   
+    }
+
+    //Logo Copyright
+    .footerLogo {
+        width: 55px; 
+        height: 55%;
+        border-radius: 100%;
+        cursor: pointer;
+    }
+
+    .titulosFormularios {
+        font-family: 'Poppins', sans-serif;
+        color: #000000;                         
+        text-shadow: 1px 1px $color-primary;
+        cursor: pointer;
+    }
+
+    .row {
+        --bs-gutter-x: 0rem !important;
+    }
+}

@@ -1,0 +1,159 @@
+//Efectos     
+    
+    //Efecto para el logo de la página 
+    .contenedorLogo {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        @include bordesSolidos(1px,black);
+        align-items: center;
+        justify-content: center;
+        overflow: hidden; 
+        @include redondear;
+        margin-left: 20px;
+
+        &:before {
+            position: absolute;
+            content:"";
+            width: 100px;
+            height: 100px;
+            background-color: rgba(255,255,255,.3);
+            top: 0;
+            left: -150px;
+            transform: skewX(-30deg);
+            transition: all .5s;
+        }
+
+        &:hover:before {
+            left: 280px;
+        } 
+    }
+
+    //Efecto salto para titulo de pagina 
+    @keyframes salto {
+        0% {
+            transform: translateY(-100px);
+        }
+        
+        100% {
+            transform: translateY(0px);
+        }
+    }
+
+    //Navbar items - botones con efecto 3D
+    .nav-item {
+        list-style: none;
+        color: black;
+        font-size: 12px;
+        font-weight: 700;
+        background: white;  
+        box-shadow: 3px 3px #000000;
+        border-radius: 12px;
+        margin: 7.5px;
+        padding: 2px 2px 3px 3px;
+        text-align: center;
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+    
+        &:hover {
+            background-color: white;
+        }
+
+        &:active {
+            box-shadow: 2px 2px 2px #777;
+            text-shadow:  0px 0px 5px #fff, 0px 0px 5px #fff;
+            transform: translateY(4px);
+            transition: all 0.1s ease 0s;
+        }
+    }
+
+    //Icono de la tienda 
+    .iconoTienda {
+        color: black;
+        font-size: 25px;
+        text-decoration: none;
+        margin-left: 5px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        transition: all 0.5s ease 0s;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+
+    .hvr-sweep-to-right {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        position: relative;
+        -webkit-transition-property: color;
+        transition-property: color;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+
+        &:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: yellow;
+            -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+            -webkit-transform-origin: 0 50%;
+            transform-origin: 0 50%;
+            -webkit-transition-property: transform;
+            transition-property: transform;
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+        }
+
+        &:hover, &:focus, &:active {
+            color: black;
+        }
+
+        &:hover:before, &:focus:before, &:active:before {
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+        }    
+    }    
+      
+    
+
+    //Footer redes sociales efecto 
+    .redesSociales a {
+        text-decoration: none;
+        color: orange;
+        font-size: 30px;
+        margin: 15px;
+        transition:  all 0.5s ease 0s;
+
+        &:nth-child(1):hover {
+            transform: scale(1.5);
+            color: blue;
+        }
+        
+        &:nth-child(2):hover {
+            transform: scale(1.5);
+            color: #d6249f;
+        }
+        
+        &:nth-child(3):hover {
+            transform: scale(1.5);
+            color: lightblue;
+        }
+        
+        &:nth-child(4):hover {
+            transform: scale(1.5);
+            color: red;
+        }
+    }

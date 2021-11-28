@@ -1,0 +1,21 @@
+//Abstracto (operaciones)   
+
+/* variables */
+$color-primary: orange;
+$color-containers: #FFD298;
+$color-body: linear-gradient(to right, #ffefba, #ffffff);
+
+
+/* operaciones */
+$color-mobile: (orange + yellow / 7);
+$font-mobile: 15px + 5px;
+$redondo:  1 * 200px;
+
+/* mixins */
+@mixin redondear() {
+    border-radius: $redondo;
+}
+
+@mixin bordesSolidos($pixeles,$color) {
+    border: $pixeles solid $color;
+}

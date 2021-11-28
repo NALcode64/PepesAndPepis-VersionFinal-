@@ -1,0 +1,21 @@
+//Configuraciones generales para la web    
+
+//Página sin margenes (costados en blanco)
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+} 
+
+//Deshabilitar barra de scroll 
+::-webkit-scrollbar {display: none;}
+
+//Tipografia 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Poppins:wght@300&family=Sintony&family=Thasadith:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+// links
+a {
+    text-decoration: none;
+    color: black;
+}

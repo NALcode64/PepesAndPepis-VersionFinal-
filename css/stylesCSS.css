@@ -1,0 +1,273 @@
+@charset "UTF-8";
+/* partials */
+/* variables */
+/* operaciones */
+/* mixins */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Poppins:wght@300&family=Sintony&family=Thasadith:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+body {
+  background: linear-gradient(to right, #ffefba, #ffffff);
+  font-family: 'Sintony', sans-serif; }
+
+.navbar {
+  border: 1px solid black;
+  /* estilo botones */
+  /* diseño boton hamburguesa para celulares */ }
+  .navbar .botonStyle {
+    border-radius: 200px; }
+  .navbar .imagenLogo {
+    width: 120%;
+    height: 100%;
+    border-radius: 200px;
+    cursor: pointer;
+    background-color: #FFD298;
+    display: flex;
+    justify-content: center; }
+  .navbar .titulo {
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    margin-left: 5px;
+    font-size: 30px;
+    font-style: Light 300;
+    text-shadow: 2px 2px orange;
+    cursor: pointer;
+    animation: salto 2s 1 ease-in; }
+  .navbar .botonMenuMobile {
+    color: orange;
+    border: gray 2px outset; }
+
+main .tituloBienvenida {
+  font-family: 'Poppins', sans-serif;
+  font-size: 45px;
+  color: black;
+  text-shadow: 3px 2px orange; }
+
+main .imagenCarousel {
+  border: 1px solid black;
+  max-height: 39rem; }
+
+main h2 {
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: underline;
+  color: black;
+  text-shadow: 1px 1px orange; }
+
+main p {
+  font-size: 15px; }
+
+main .tituloTienda {
+  font-size: 30px !important;
+  text-decoration: underline; }
+
+footer .footerStyle {
+  background-color: #FFD298;
+  border: 0.5px solid black; }
+
+footer .tituloFooter {
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  font-size: 25px;
+  font-style: Light 300;
+  text-shadow: 2px 2px orange;
+  cursor: pointer; }
+
+footer .iconoMail {
+  color: black;
+  background-color: orange; }
+
+footer .footerLogo {
+  width: 55px;
+  height: 55%;
+  border-radius: 100%;
+  cursor: pointer; }
+
+footer .titulosFormularios {
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  text-shadow: 1px 1px orange;
+  cursor: pointer; }
+
+footer .row {
+  --bs-gutter-x: 0rem !important; }
+
+.contenedorLogo {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  border: 1px solid black;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 200px;
+  margin-left: 20px; }
+  .contenedorLogo:before {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.3);
+    top: 0;
+    left: -150px;
+    transform: skewX(-30deg);
+    transition: all .5s; }
+  .contenedorLogo:hover:before {
+    left: 280px; }
+
+@keyframes salto {
+  0% {
+    transform: translateY(-100px); }
+  100% {
+    transform: translateY(0px); } }
+
+.nav-item {
+  list-style: none;
+  color: black;
+  font-size: 12px;
+  font-weight: 700;
+  background: white;
+  box-shadow: 3px 3px #000000;
+  border-radius: 12px;
+  margin: 7.5px;
+  padding: 2px 2px 3px 3px;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+  cursor: pointer; }
+  .nav-item:hover {
+    background-color: white; }
+  .nav-item:active {
+    box-shadow: 2px 2px 2px #777;
+    text-shadow: 0px 0px 5px #fff, 0px 0px 5px #fff;
+    transform: translateY(4px);
+    transition: all 0.1s ease 0s; }
+
+.iconoTienda {
+  color: black;
+  font-size: 25px;
+  text-decoration: none;
+  margin-left: 5px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  transition: all 0.5s ease 0s; }
+  .iconoTienda:hover {
+    color: orange; }
+
+.hvr-sweep-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+  .hvr-sweep-to-right:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: yellow;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+  .hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+    color: black; }
+  .hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); }
+
+.redesSociales a {
+  text-decoration: none;
+  color: orange;
+  font-size: 30px;
+  margin: 15px;
+  transition: all 0.5s ease 0s; }
+  .redesSociales a:nth-child(1):hover {
+    transform: scale(1.5);
+    color: blue; }
+  .redesSociales a:nth-child(2):hover {
+    transform: scale(1.5);
+    color: #d6249f; }
+  .redesSociales a:nth-child(3):hover {
+    transform: scale(1.5);
+    color: lightblue; }
+  .redesSociales a:nth-child(4):hover {
+    transform: scale(1.5);
+    color: red; }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+::-webkit-scrollbar {
+  display: none; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+@media (max-width: 768px) {
+  .navbar .tituloBienvenida {
+    font-size: 35px; }
+  .navbar .nav-item {
+    background-color: #ffc900;
+    font-size: 15px;
+    padding: 0px !important; }
+  .navbar .iconoTienda {
+    display: none; }
+  main h2 {
+    font-size: 25px !important;
+    text-align: center;
+    margin-bottom: 15px; }
+  main article {
+    text-align: justify !important; }
+  main p {
+    font-size: 20px !important;
+    text-align: justify; }
+  main table {
+    font-size: 12px; } }
+
+@media (min-width: 768px) {
+  .nav-item:nth-child(5) {
+    display: none; } }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .redesSociales {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px; } }
+
+/* ----------- iPhone 4 and 4S ----------- */
+@media only screen and (min-device-width: 480px) and (max-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+  .redesSociales {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px; } }
+
+/* ----------- Celulares Samsung ----------- */
+@media screen and (device-width: 640px) and (device-height: 320px) and (-webkit-device-pixel-ratio: 2) {
+  .redesSociales {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px; } }
+
+/* ----------- Google Pixel ----------- */
+@media screen and (device-width: 640px) and (device-height: 360px) and (-webkit-device-pixel-ratio: 3) {
+  .redesSociales {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px; } }
