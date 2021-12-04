@@ -84,7 +84,7 @@
         <!-- main -->
         <main>
             <div class="container">
-                <h1 class="tituloBienvenida text-center mt-2">Curiosidades Gatunas</h1>
+                <h1 class="tituloBienvenida text-center mt-4">Curiosidades Gatunas</h1>
                 <hr>
                 <h2 class="text-center mt-2 mb-2">¿Cúal es la edad humana de tu gato?</h2>
                 <table class="table table-responsive table-bordered text-center">
@@ -163,41 +163,46 @@
                     </tbody>
                 </table>
 
-                <h2 class="text-center mt-2 mb-2">¿Qué etapa de la vida esta atravesando tu gato según nuestra tabla?</h2>
-                <table class="table table-responsive table-bordered text-center">
-                    <tbody class="border-2 border-dark">
-                        <tr>
-                            <td>
-                                <input  class="btn-check" name="btnradio" id="btnradio9" autocomplete="off">
-                                <label  class="btn btn-outline" for="btnradio9"> Infancia </label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input  class="btn-check " name="btnradio" id="btnradio10" autocomplete="off">
-                                <label  class="btn btn-outline" for="btnradio10"> Adolencencia </label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input  class="btn-check " name="btnradio" id="btnradio11" autocomplete="off">
-                                <label  class="btn btn-outline" for="btnradio11"> Juventud </label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input  class="btn-check " name="btnradio" id="btnradio12" autocomplete="off">
-                                <label  class="btn btn-outline" for="btnradio12"> Madurez </label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input  class="btn-check " name="btnradio" id="btnradio13" autocomplete="off">
-                                <label  class="btn btn-outline" for="btnradio13"> Vejez </label>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <!-- acordion con videos graciosos  -->
+                <h2 class="text-center mt-4 mb-4">A continuación elije una opción y podras ver videos muy divertidos!!</h2>
+                <div class="accordion mb-4 border-dark" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Niñez
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body embed-responsive embed-responsive text-center">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/noAGPQbdsRI" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Adolecencia
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body embed-responsive embed-responsive text-center">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/AIQLBiGUCQ4" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Vejez
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body embed-responsive embed-responsive text-center">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/j2RgRn5KmVA" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                    </div>
+                </div>
             </div>
         </main>
 

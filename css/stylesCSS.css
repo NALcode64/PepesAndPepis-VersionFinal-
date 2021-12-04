@@ -267,7 +267,8 @@ a {
     text-align: justify !important; }
   main p {
     font-size: 20px !important;
-    text-align: justify; }
+    text-align: justify;
+    margin: 1px; }
   main table {
     font-size: 12px; } }
 
