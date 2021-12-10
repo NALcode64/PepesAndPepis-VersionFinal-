@@ -10,47 +10,29 @@
         <meta name="description" content="Todos sobre tus animales favoritos los gatunos!! entra y conoce todo sobre como cuidarlos y brindarles la mayor felicidad">                                                          
         <meta name="keywords" content="bienvenida,principal"/>
         <link rel="icon" type="image/jpg" href="public/img/pepeLogo.jpg"> 
-        
-        <!-- Bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        
-        <!-- iconos -->
         <script src="https://kit.fontawesome.com/a18b469d64.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-        
-        <!-- animaciones para los textos -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-        <!-- styles css -->
         <link rel="stylesheet" href="./css/stylesCSS.css">
     </head>
 
     <body>
         <header>
-            <!-- barra de navegación -->
             <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FFD298;">
                 <div class="container-fluid d-flex justify-content-center align-items-center">
-                    
-                    <!-- contenedor para efecto hover en logo de la pagina -->
                     <div class="contenedorLogo" >
-                        <!-- logo de la página -->
                         <a class="navbar-brand" href="index.html">
                             <img src="public/img/pepeLogo.jpg" class="imagenLogo" alt="logo de página">
                         </a>
                     </div>
-
-                    <!-- titulo de la página -->
                     <a class="navbar-brand titulo fs-1" href="index.html">
                         <span class="ms-4"> Pepe's and Pepi's </span>
                     </a>
-                    
-                    <!-- boton de navegación pantallas más pequeñas -->
                     <button class="navbar-toggler m-4 botonMenuMobile"  type="button" data-bs-toggle="collapse" data-bs-target="#botónParaMóviles" aria-controls="botónParaMóviles" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="fas fa-cat"></span> 
                     </button>
-
-                    <!-- links a cada página -->
                     <div class="collapse navbar-collapse" id="botónParaMóviles">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item border border-dark border-1 botonStyle p-2 m-2">
@@ -69,7 +51,6 @@
                                 <a class="nav-link active"  aria-current="page" href="pages/Tienda-Online.html">Tienda</a>
                             </li>
                         </ul>
-                        <!-- boton para la tienda -->
                         <div>
                             <a class="fas fa-shopping-cart iconoTienda me-4 ms-4" aria-current="page" href="pages/Tienda-Online.html"></a>
                         </div>
@@ -78,30 +59,24 @@
             </nav>
         </header>
 
-
-        <!-- main -->
         <main>
             <div class="container-fluid">   
-                <article class="w-100 col-xs-12 col-sm-8 col-md-9">
+                <section class="w-100 col-xs-12 col-sm-8 col-md-9">
                     <h1 class="tituloBienvenida p-3 d-flex justify-content-center">BIENVENIDOS</h1>
                     <img src="public/img/pepeLogo.jpg" class="d-block mx-auto rounded-circle mb-4" alt="pepe logo">
                     <p>
                             Bienvenidos a la mejor página del mundo para tus gatunos!! A lo largo de nuestra página te enseñaremos distintos tips para su cuidado, te brindaremos información nunca vista y además te ofreceremos nuestros productos. A continuación podras ver un breve resumen de cada una de nuestras secciones en nuestra web. 
                     </p> 
-                </article>
-
-
-
-                <!-- ¿Quienes Somos? -->
+                </section>
                 <section data-aos="zoom-in">
                     <div class="container-fluid mt-5">
                         <div class="row textosDiseño1">
-                            <div class="col-sm-12 col-md-8 order-sm-2">
+                            <div class="col-sm-12 col-md-8 order-sm-2 text-xs-start">
                                 <h2 class="tituloBienvenida mt-4">¿Quienes Somos?</h2>
                                 <p> 
                                     En esta sesion te contamos porque decidimos crear esta página, nuestros objetivos y filosofia. Además te daremos un acercamiento a nuestra familia con imagenes y videos!!
                                 </p>
-                                <a class="btn btn-lg border-dark mb-5 mt-1 hvr-sweep-to-right colorDeBoton" href="./pages/Quienes-Somos.html">Más información <i class="fa fa-arrow-circle-o-right"></i> </a>
+                                <a class="btn btn-lg mb-5 mt-2 hvr-sweep-to-right colorDeBoton" href="./pages/Quienes-Somos.html">Más información <i class="fa fa-arrow-circle-o-right"></i> </a>
                             </div>
                             <div class="col-sm-12 col-md-4 order-sm-1 p-2">
                                 <a href="./pages/Quienes-Somos.html">
@@ -111,8 +86,6 @@
                         </div>
                     </div>
                 </section>
-
-                <!-- Alimentación Felina -->
                 <section  data-aos="zoom-in">
                     <div class="container-fluid mt-5">
                         <div class="row textosDiseño2 border">
@@ -121,7 +94,7 @@
                                 <p>
                                     ¿Cúal es la mejor alimentación para nuestras mascotas? En esta sesion te explicaremos detalladamente cual es la alimentación adecuada para nuestras mascostas,nuestra familia, la mas sana posible.Alimentos naturales para prolongar y mejorar su calidad de vida.
                                 </p>
-                                <a class="btn btn-warning btn-lg mb-5 mt-1 hvr-sweep-to-right colorDeBoton" href="./pages/Alimentación-Felina.html">Más información <i class="fa fa-arrow-circle-o-right"></i> </a>
+                                <a class="btn btn-warning btn-lg mb-5 mt-2 hvr-sweep-to-right colorDeBoton" href="./pages/Alimentación-Felina.html">Más información <i class="fa fa-arrow-circle-o-right"></i> </a>
                             </div>
                             <div class="col-sm-12 col-md-5 p-2 order-sm-2">
                                 <a href="./pages/Alimentación-Felina.html">
@@ -131,8 +104,6 @@
                         </div>
                     </div>
                 </section>
-
-                <!-- Salud Felina -->
                 <section  data-aos="zoom-in">
                     <div class="container-fluid mt-5">
                         <div class="row textosDiseño1">
@@ -141,7 +112,7 @@
                                 <p>
                                     La famosa frase "Más vale prevenir que curar" también es válida para la salud de nuestros gatunos. En esta sesion te indicaremos lo que debes hacer para garantizar su estado de salud al 100%. 
                                 </p>
-                                <a class="btn btn-warning btn-lg mb-5 mt-1 hvr-sweep-to-right colorDeBoton" href="./pages/Salud-Felina.html">Más información <i class="fa fa-arrow-circle-o-right"></i> </a>
+                                <a class="btn btn-warning btn-lg mb-5 mt-2 hvr-sweep-to-right colorDeBoton" href="./pages/Salud-Felina.html">Más información <i class="fa fa-arrow-circle-o-right"></i> </a>
                             </div>
                             <div class="col-sm-12 col-md-4 p-2 m-0 order-sm-1">
                                 <a href="./pages/Salud-Felina.html">
@@ -151,8 +122,6 @@
                         </div>
                     </div>
                 </section>
-
-                <!-- Curiosidades Gatunas -->
                 <section  data-aos="zoom-in">
                     <div class="container-fluid mt-5">
                         <div class="row textosDiseño2 border">
@@ -162,7 +131,7 @@
                                     ¿Muchos datos?¿Poca diversión?
                                     Esta sesion es la que te alegrara el dia, la que te sacara una sonrisa y si no tienes un gatuno te hara tenerlo seguramente!!
                                 </p>
-                                <a class="btn btn-warning btn-lg mb-5 mt-1 hvr-sweep-to-right colorDeBoton" href="./pages/Curiosidades-Gatunas.html">Más información <i class="fa fa-arrow-circle-o-right"></i> </a>
+                                <a class="btn btn-warning btn-lg mb-5 mt-2 hvr-sweep-to-right colorDeBoton" href="./pages/Curiosidades-Gatunas.html">Más información <i class="fa fa-arrow-circle-o-right"></i> </a>
                             </div>
                             <div class="col-sm-12 col-md-3 p-2 order-sm-2">
                                 <a href="./pages/Curiosidades-Gatunas.html">
@@ -172,8 +141,6 @@
                         </div>
                     </div>
                 </section>
-
-                <!-- Tienda Online -->
                 <section  data-aos="zoom-in">
                     <div class="container-fluid mt-5 mb-4">
                         <div class="row textosDiseño1">
@@ -182,7 +149,7 @@
                                 <p>
                                     Los mejores productos para tus gatunos estan aqui!! te acercaremos mas de mil productos de todo tipo.
                                 </p>
-                                <a class="btn btn-warning btn-lg mb-5 mt-1 hvr-sweep-to-right colorDeBoton" href="./pages/Tienda-Online.html">Más información <i class="fa fa-arrow-circle-o-right"></i> </a>
+                                <a class="btn btn-warning btn-lg mb-5 mt-2 hvr-sweep-to-right colorDeBoton" href="./pages/Tienda-Online.html">Más información <i class="fa fa-arrow-circle-o-right"></i> </a>
                             </div>
                             <div class="col-sm-12 col-md-4 p-2 order-sm-1">
                                 <a href="./pages/Tienda-Online.html">
@@ -195,7 +162,6 @@
             </div>
         </main>
 
-        <!-- Boton hacia arriba -->
         <a class="ir-arriba"  javascript:void(0) title="Volver arriba">
             <span class="fa-stack">
                 <i class="fa fa-circle fa-stack-2x"></i>
@@ -203,25 +169,18 @@
             </span>
         </a>
 
-
-        <!-- footer -->
         <footer>
             <div class="row align-items-center m-auto footerStyle"> 
-                <!-- titulo de footer -->
                 <div class="col-xs-12 col-sm-3 col-sm-pull-6">
                     <h4 class="tituloFooter row align-items-center col-auto text-center">¿Quieres saber más acerca de nosotros? ¡¡ Síguenos en nuestras redes sociales !!</h4>
                 </div>
-        
-                <!-- footer redes sociales -->
                 <div class="col-xs-12 col-sm-3 col-sm-pull-6 redesSociales text-center" id="redesSocialesMedia">
                     <a href="https://www.facebook.com/Pepes-and-Pepis-104829578661748" class="fa fa-facebook" target="_blank"></a>
                     <a href="https://www.instagram.com/pepesandpepis/" class="fa fa-instagram" target="_blank"></a>
                     <a href="https://twitter.com/pepes_and_pepis" class="fa fa-twitter" target="_blank"></a>
                     <a href="https://www.youtube.com/watch?v=xhKWcEfEgi0&t=10s" class="fa fa-youtube" target="_blank"></a>
                 </div>
-        
-                <!-- para enviar mails -->
-                <div class="col-xs-12 col-sm-3 col-sm-pull-6 mt-2 text-center ocultar">
+                <div class="col-xs-12 col-sm-3 col-sm-pull-6 mt-2 text-center">
                     <div class="row justify-content-center col-auto">
                         <span class="text-dark mb-0 fw-bold fs-6 titulosFormularios ">Ingresa tu mail para recibir más información</span>
                         <span class="text-dark fs-8 titulosFormularios">Suscribete!</span>
@@ -233,28 +192,18 @@
                         </form>
                     </div>   
                 </div>
-        
-                <!-- logo de footer con copyright -->
                 <div class="col-xs-12 col-sm-3 col-sm-pull-6">
                     <div>
                         <a  class="row justify-content-center col-auto" href="index.html"> <img class="footerLogo" src="public/img/pepeLogo.jpg" alt="logo de Pepe"> </a>
                         <small  class="row justify-content-center col-auto">&copy; 2021 <strong  class="row justify-content-center col-auto"> Pepe's and Pepi's</strong> </small>
-                        <small></small>
                     </div>
                 </div>
             </div>
         </footer>
 
-        <!-- script bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-        <!-- script j-query -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-        <!-- js -->
-        <script src="js/java.js"></script>
-
-        <!-- script para animaciones -->
+        <script src="js/main.js"></script>
         <script> AOS.init(); </script>
     </body>
 

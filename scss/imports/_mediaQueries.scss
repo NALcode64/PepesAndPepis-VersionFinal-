@@ -1,20 +1,15 @@
-//Media Queries     
-
-//Pantallas hasta
 @media (max-width: 768px) {
     .navbar {
         .tituloBienvenida {
             font-size: 35px;
         }
 
-        //Navbar Items - botones 
         .nav-item {
             background-color: $color-mobile;
             font-size: 15px;
             padding: 0px !important;
         }
 
-        //Tienda página 
         .iconoTienda {
             display: none;
         }    
@@ -22,17 +17,17 @@
 
     main {
         h2 {
-            font-size: 25px !important;
+            font-size: 25px;
             text-align: center;
             margin-bottom: 15px;
         }
 
         article {
-            text-align: justify !important;
+            text-align: justify;
         }
 
         p {
-            font-size: $font-mobile !important;
+            font-size: $font-mobile;
             text-align: justify;
             margin: 1px;
         }
@@ -41,20 +36,21 @@
             font-size: 12px;
         }
 
-        ;
+        iframe {
+            display: block; 
+            margin: auto;
+            width: 300px; 
+            height: 200px;
+        }
     }
 }
 
-//Pantallas a partir de 
 @media (min-width: 768px) {
-    //Ocultar icono de tienda 
     .nav-item:nth-child(5) {
         display: none;
     }    
 }
 
-
-//tablets 
 @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
@@ -68,7 +64,6 @@
 
 }
 
-/* ----------- iPhone 4 and 4S ----------- */
 @media only screen 
   and (min-device-width: 480px) 
   and (max-device-width: 320px)
@@ -81,7 +76,6 @@
     }
 }
 
-/* ----------- Celulares Samsung ----------- */
 @media screen 
   and (device-width: 640px) 
   and (device-height: 320px) 
@@ -94,7 +88,6 @@
     }
 }
 
-/* ----------- Google Pixel ----------- */
 @media screen 
   and (device-width: 640px) 
   and (device-height: 360px) 

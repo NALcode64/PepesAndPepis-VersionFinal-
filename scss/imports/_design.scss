@@ -1,21 +1,14 @@
-//Diseño    
-
-
-//Color de fondo página 
 body {
     background: $color-body; 
 }
 
-//Barra de navegación
 .navbar {
     @include bordesSolidos(1px,black);
     
-    /* estilo botones */
     .botonStyle {
         @include redondear;
     }
 
-    //Logo de la página
     .imagenLogo {
         width: 120%; 
         height: 100%;
@@ -26,7 +19,6 @@ body {
         justify-content: center;
     }
 
-    //Titulo de la página 
     .titulo {
         font-family: 'Josefin Sans', sans-serif;
         color: #000000;
@@ -38,7 +30,6 @@ body {
         animation: salto 2s 1 ease-in;
     }
 
-    /* diseño boton hamburguesa para celulares */
     .botonMenuMobile {
         color: $color-primary;
         border: gray 2px outset;
@@ -46,7 +37,6 @@ body {
 }
 
 main {
-    //Titulo de bienvenida a la página 
     .tituloBienvenida {
         font-family: 'Josefin Sans', sans-serif;
         font-size: 45px;
@@ -54,13 +44,11 @@ main {
         text-shadow: 3px 2px $color-primary;
     }
 
-    //Imagenes del carrousel 
     .imagenCarousel {
         border: 1px solid black;
         max-height: 39rem;
     }    
 
-    //Subtitulos
     h2 {
         font-size: 25px;
         font-family: 'Josefin Sans', sans-serif;
@@ -68,25 +56,20 @@ main {
         text-shadow: 1px 1px $color-primary;
     }
 
-    //Parráfos
     p  {
         font-family: 'Roboto';
         font-weight: 500;
         font-size: 18px;
     }
 
-    //titulo tienda
     .tituloTienda {
-        font-size: 30px !important;
         text-decoration: underline;
     }
 
-    //color de los botones del index
     .colorDeBoton {
-        background-color: orange !important;
+        background-color: orange;
     }
 
-    //color de div con texto
     .textosDiseño1 {
         background-color: #FFD298;
         border-radius: 10px;
@@ -104,7 +87,6 @@ footer {
         @include bordesSolidos(0.5px,black);
     }
 
-    //Titulo footer
     .tituloFooter {
         font-family: 'Poppins', sans-serif;
         color: #000000;                        
@@ -114,13 +96,11 @@ footer {
         cursor: pointer;
     }
 
-    //Icono mail
     .iconoMail {
         color: black;
         background-color: $color-primary;   
     }
 
-    //Logo Copyright
     .footerLogo {
         width: 55px; 
         height: 55%;
